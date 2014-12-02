@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p class="titlename">
+  <strong>List:</strong>
+  <%=link_to @list.title, lists_path %>
+</p>
+
+<%= render 'tasks/index' %>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>
